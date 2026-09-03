@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhas Receitas Web</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container cabecalho">
+      <a class="logo" href="index.html">Minhas Receitas</a>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cadastro.html">Cadastrar receita</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="apresentacao">
+      <p class="destaque">Seu caderno digital de receitas</p>
+      <h1>Receitas simples para guardar e consultar</h1>
+      <p>Organize suas receitas favoritas em um só lugar.</p>
+      <a class="botao" href="cadastro.html">Nova receita</a>
+    </section>
+
+    <section aria-labelledby="titulo-receitas">
+      <div class="titulo-secao">
+        <div>
+          <p class="destaque">Receitas cadastradas</p>
+          <h2 id="titulo-receitas">Minhas receitas</h2>
+        </div>
+        <form class="busca" action="index.html" method="get">
+          <label for="busca">Buscar receita</label>
+          <div class="linha-busca">
+            <input type="search" id="busca" name="busca" placeholder="Ex.: bolo de cenoura">
+            <button type="submit">Buscar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="grade-receitas">
+        <article class="card">
+          <span class="categoria">Sobremesas</span>
+          <h3>Bolo de cenoura</h3>
+          <p>Bolo fofinho de cenoura com cobertura simples de chocolate.</p>
+          <a href="detalhes.html">Ver receita</a>
+        </article>
+        <article class="card">
+          <span class="categoria">Massas</span>
+          <h3>Macarrão ao molho de tomate</h3>
+          <p>Uma opção prática para o almoço ou jantar do dia a dia.</p>
+          <a href="detalhes.html">Ver receita</a>
+        </article>
+        <article class="card">
+          <span class="categoria">Lanches</span>
+          <h3>Pão de queijo</h3>
+          <p>Receita fácil para acompanhar o café da manhã ou da tarde.</p>
+          <a href="detalhes.html">Ver receita</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container"><p>Minhas Receitas Web — Projeto acadêmico de Engenharia da Computação.</p></div></footer>
+</body>
+</html>

@@ -1,17 +1,36 @@
 # Minhas Receitas Web 🍳
 
-Bem-vindo ao repositório do projeto **Minhas Receitas Web**! 
+Projeto acadêmico desenvolvido no curso de Engenharia da Computação da PUC Goiás. O objetivo é criar um caderno digital simples para cadastrar, organizar e consultar receitas culinárias.
 
-Este projeto está sendo desenvolvido ao longo do curso de Engenharia de Computação na PUC Goiás e tem como objetivo criar um caderno digital simples e prático para cadastrar, organizar e consultar receitas culinárias do dia a dia.
+## Etapa atual — Etapa 02
+O projeto possui um protótipo estrutural feito com **HTML5 semântico e CSS3**, contendo três interfaces principais:
 
-## 📚 Documentação
-Para ver a especificação completa do projeto, incluindo as funcionalidades, as telas e o diagrama de arquitetura, acesse o arquivo da Etapa 01:
-👉 [Acessar a Proposta do Projeto](docs/proposta.md)
+- Página inicial com listagem e busca de receitas;
+- Página de cadastro de receita;
+- Página de detalhes de uma receita.
 
-## 🛠️ Tecnologias Utilizadas (Previsão)
-* **Front-end:** HTML5 e CSS3 puros (com noções de JavaScript).
-* **Back-end:** Node.js (Express).
-* **Banco de Dados:** SQLite.
+## Como executar
+Não é necessário instalar dependências. Basta baixar/clonar o projeto e abrir o arquivo `index.html` no navegador.
 
----
-*Projeto em desenvolvimento contínuo durante o semestre.*
+## Estrutura
+```text
+├── index.html
+├── cadastro.html
+├── detalhes.html
+├── css/
+│   └── style.css
+└── docs/
+    ├── proposta.md
+    └── etapa-02.md
+```
+
+## Documentação
+- [Etapa 01 — Proposta do Projeto](docs/proposta.md)
+- [Etapa 02 — Protótipo Estrutural](docs/etapa-02.md)
+
+## Tecnologias
+- HTML5
+- CSS3
+- JavaScript (previsto para etapas futuras)
+- Node.js + Express (previsto)
+- SQLite (previsto)
