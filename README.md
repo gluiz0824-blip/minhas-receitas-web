@@ -3,7 +3,7 @@
 Projeto acadêmico desenvolvido no curso de Engenharia da Computação da PUC Goiás. O objetivo é criar um caderno digital simples para cadastrar, organizar e consultar receitas culinárias.
 
 ## Etapa atual — Etapa 02
-O projeto possui um protótipo estrutural feito com **HTML5 semântico e CSS3**, contendo três interfaces principais:
+O projeto possui um protótipo estrutural feito com **HTML5 semântico**, contendo três interfaces principais:
 
 - Página inicial com listagem e busca de receitas;
 - Página de cadastro de receita;
@@ -17,8 +17,6 @@ Não é necessário instalar dependências. Basta baixar/clonar o projeto e abri
 ├── index.html
 ├── cadastro.html
 ├── detalhes.html
-├── css/
-│   └── style.css
 └── docs/
     ├── proposta.md
     └── etapa-02.md
