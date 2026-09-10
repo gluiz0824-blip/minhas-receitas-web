@@ -9,7 +9,6 @@ Nesta etapa, a proposta do projeto **Minhas Receitas Web** foi transformada em u
 - Navegação entre as páginas do sistema.
 - Formulário para cadastro de uma nova receita.
 - Visualização dos detalhes de uma receita, incluindo ingredientes, tempo e modo de preparo.
-- Layout responsivo básico com CSS.
 
 ## Páginas criadas
 ### 1. Página inicial — `index.html`
@@ -41,8 +40,6 @@ minhas-receitas-web/
 ├── index.html
 ├── cadastro.html
 ├── detalhes.html
-├── css/
-│   └── style.css
 ├── docs/
 │   ├── proposta.md
 │   └── etapa-02.md
