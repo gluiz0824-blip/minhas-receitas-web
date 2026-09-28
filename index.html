@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minhas Receitas Web</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
   <header>
@@ -33,7 +34,7 @@
           <p class="destaque">Receitas cadastradas</p>
           <h2 id="titulo-receitas">Minhas receitas</h2>
         </div>
-        <form class="busca" action="index.html" method="get">
+        <form class="busca" id="form-busca">
           <label for="busca">Buscar receita</label>
           <div class="linha-busca">
             <input type="search" id="busca" name="busca" placeholder="Ex.: bolo de cenoura">
@@ -42,26 +43,9 @@
         </form>
       </div>
 
-      <div class="grade-receitas">
-        <article class="card">
-          <span class="categoria">Sobremesas</span>
-          <h3>Bolo de cenoura</h3>
-          <p>Bolo fofinho de cenoura com cobertura simples de chocolate.</p>
-          <a href="detalhes.html">Ver receita</a>
-        </article>
-        <article class="card">
-          <span class="categoria">Massas</span>
-          <h3>Macarrão ao molho de tomate</h3>
-          <p>Uma opção prática para o almoço ou jantar do dia a dia.</p>
-          <a href="detalhes.html">Ver receita</a>
-        </article>
-        <article class="card">
-          <span class="categoria">Lanches</span>
-          <h3>Pão de queijo</h3>
-          <p>Receita fácil para acompanhar o café da manhã ou da tarde.</p>
-          <a href="detalhes.html">Ver receita</a>
-        </article>
-      </div>
+      <p id="quantidade-receitas" class="informacao-lista" aria-live="polite"></p>
+      <div class="grade-receitas" id="lista-receitas"></div>
+      <p id="sem-resultados" class="sem-resultados" hidden>Nenhuma receita foi encontrada.</p>
     </section>
   </main>
 
