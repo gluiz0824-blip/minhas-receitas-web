@@ -290,6 +290,66 @@ body > footer p {
   margin: 0;
 }
 
+/* Estilos adicionados na Etapa 04 */
+.informacao-lista {
+  margin-bottom: 16px;
+  color: #666666;
+}
+
+.tempo-receita {
+  display: block;
+  margin-bottom: 14px;
+  color: #666666;
+}
+
+.botao-excluir {
+  margin-top: 10px;
+  background-color: #ffffff;
+  color: #8b3417;
+}
+
+.botao-excluir:hover {
+  background-color: #f7e7e1;
+}
+
+.sem-resultados {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+}
+
+.campo small {
+  color: #666666;
+}
+
+.mensagem {
+  margin-top: 20px;
+}
+
+.mensagem ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.mensagem.erro,
+.mensagem.sucesso {
+  padding: 14px 18px;
+  border-radius: 7px;
+}
+
+.mensagem.erro {
+  border: 1px solid #b94a48;
+  background-color: #fff1f0;
+  color: #8a2f2d;
+}
+
+.mensagem.sucesso {
+  border: 1px solid #4f8a52;
+  background-color: #eff8ef;
+  color: #315f34;
+}
+
 /* Breakpoint para tablet */
 @media (max-width: 900px) {
   .container {
