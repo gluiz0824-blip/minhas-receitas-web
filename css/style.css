@@ -212,9 +212,26 @@ textarea:focus {
   flex: 1;
 }
 
-.card a {
-  color: #8b3417;
-  font-weight: bold;
+.acoes-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.card .botao {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.acoes-card .botao-excluir {
+  margin-top: 0;
+}
+
+.texto-preparo {
+  white-space: pre-line;
 }
 
 .categoria {
