@@ -10,7 +10,8 @@ Principais funcionalidades:
 - busca de receitas por nome ou categoria;
 - cadastro de novas receitas com validação dos campos;
 - armazenamento das receitas no `localStorage` do navegador;
-- exibição automática das receitas cadastradas na página inicial;
+- exibição automática das receitas cadastradas na página inicial, sem receitas de exemplo;
+- página de detalhes dinâmica para cada receita cadastrada (ingredientes e preparo);
 - exclusão de receitas cadastradas pelo usuário;
 - contador de ingredientes preenchidos no formulário.
 
