@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minhas Receitas Web</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+  <script type="module" src="js/main.js"></script>
 </head>
 <body>
   <header>
@@ -44,6 +44,12 @@
       </div>
 
       <p id="quantidade-receitas" class="informacao-lista" aria-live="polite"></p>
+      <p id="carregando-lista" class="estado-carregamento" role="status" hidden>Carregando receitas do servidor...</p>
+      <p id="erro-lista" class="mensagem erro" role="alert" hidden></p>
+      <div class="acoes-teste">
+        <button type="button" id="testar-erro-lista" class="botao-teste">Simular erro na consulta</button>
+        <button type="button" id="tentar-novamente" class="botao-teste" hidden>Tentar novamente</button>
+      </div>
       <div class="grade-receitas" id="lista-receitas"></div>
       <p id="sem-resultados" class="sem-resultados" hidden>Nenhuma receita foi encontrada.</p>
     </section>

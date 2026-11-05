@@ -475,3 +475,54 @@ body > footer p {
     text-align: center;
   }
 }
+
+
+/* Etapa 05: carregamento, erros e controles para demonstração */
+[hidden] { display: none !important; }
+
+.estado-carregamento {
+  margin: 16px 0;
+  padding: 14px 18px;
+  border: 1px solid #ddd4cd;
+  border-radius: 7px;
+  background-color: #fffaf5;
+  color: #75402b;
+}
+
+.acoes-teste {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 20px;
+}
+
+.botao-teste {
+  padding: 8px 12px;
+  border-color: #b3b3b3;
+  background: #fff;
+  color: #555;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.botao-teste:hover { background: #eee; }
+
+.area-teste {
+  padding: 12px;
+  border: 1px dashed #ccc;
+  border-radius: 6px;
+  color: #555;
+  font-size: 14px;
+}
+
+.area-teste label { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+.area-teste input[type="checkbox"] { width: auto; }
+
+.mensagem.carregamento {
+  padding: 14px 18px;
+  border-radius: 7px;
+  background: #fffaf5;
+  color: #75402b;
+}
+
+button:disabled { opacity: 0.65; cursor: wait; }

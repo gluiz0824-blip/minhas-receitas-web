@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastrar Receita | Minhas Receitas Web</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+  <script type="module" src="js/main.js"></script>
 </head>
 <body>
   <header>
@@ -52,6 +52,9 @@
         <div class="campo">
           <label for="preparo">Modo de preparo</label>
           <textarea id="preparo" name="preparo" rows="8"></textarea>
+        </div>
+        <div class="area-teste">
+          <label><input type="checkbox" id="simular-erro-cadastro"> Simular erro de comunicação (teste da Etapa 05)</label>
         </div>
         <div class="acoes-formulario">
           <a class="botao-secundario" href="index.html">Cancelar</a>

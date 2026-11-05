@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nome": "Bolo de cenoura",
+    "categoria": "Sobremesas",
+    "tempo": 45,
+    "ingredientes": "2 cenouras médias\n3 ovos\n2 xícaras de farinha de trigo\n1 xícara de açúcar",
+    "preparo": "Bata as cenouras com os ovos, misture os demais ingredientes e asse por aproximadamente 35 minutos."
+  },
+  {
+    "id": 2,
+    "nome": "Macarrão alho e óleo",
+    "categoria": "Massas",
+    "tempo": 20,
+    "ingredientes": "200 g de macarrão\n2 dentes de alho\n2 colheres de azeite",
+    "preparo": "Cozinhe o macarrão, doure o alho no azeite e misture tudo antes de servir."
+  },
+  {
+    "id": 3,
+    "nome": "Sanduíche natural",
+    "categoria": "Lanches",
+    "tempo": 10,
+    "ingredientes": "2 fatias de pão\n2 folhas de alface\n1 tomate\nFrango desfiado",
+    "preparo": "Corte o tomate, distribua o frango com alface e feche o sanduíche para servir."
+  }
+]

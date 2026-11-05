@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Detalhes da receita | Minhas Receitas Web</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+  <script type="module" src="js/main.js"></script>
 </head>
 <body>
   <header>
@@ -21,6 +21,8 @@
   </header>
 
   <main class="container detalhes">
+    <p id="carregando-detalhes" class="estado-carregamento" role="status" hidden>Carregando detalhes da receita...</p>
+    <p id="erro-detalhes" class="mensagem erro" role="alert" hidden></p>
     <article id="conteudo-receita" hidden>
       <header class="cabecalho-receita">
         <span class="categoria" id="detalhe-categoria"></span>
