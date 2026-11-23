@@ -1,0 +1,124 @@
+{
+  "info": {
+    "name": "Minhas Receitas Web - Etapa 06",
+    "description": "Testes simples da API REST. Inicie node servidor.js e, depois do POST, copie o ID criado para a variável id antes de executar PUT e DELETE.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1 - Listar receitas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/receitas",
+        "description": "Retorna todas as receitas (200)."
+      }
+    },
+    {
+      "name": "2 - Consultar receita por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/receitas/{{id}}",
+        "description": "Retorna uma receita (200) ou erro (404)."
+      }
+    },
+    {
+      "name": "3 - Cadastrar receita",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/receitas",
+        "description": "Cria uma receita (201). Copie o ID da resposta para a variável id.",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Omelete simples\",\n  \"categoria\": \"Lanches\",\n  \"tempo\": 15,\n  \"ingredientes\": \"2 ovos\\nSal a gosto\",\n  \"preparo\": \"Misture os ovos e prepare na frigideira.\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "4 - Atualizar receita",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/receitas/{{id}}",
+        "description": "Atualiza uma receita com todos os campos (200).",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Omelete com queijo\",\n  \"categoria\": \"Lanches\",\n  \"tempo\": 15,\n  \"ingredientes\": \"2 ovos\\nQueijo\\nSal a gosto\",\n  \"preparo\": \"Misture tudo e prepare a omelete na frigideira.\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "5 - Excluir receita",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "{{baseUrl}}/api/receitas/{{id}}",
+        "description": "Apaga a receita informada (200)."
+      }
+    },
+    {
+      "name": "6 - Testar cadastro inválido",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/receitas",
+        "description": "Verifica erro de validação (400).",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"A\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "7 - Testar receita inexistente",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/receitas/999999999999",
+        "description": "Verifica receita não encontrada (404)."
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8000"
+    },
+    {
+      "key": "id",
+      "value": "1"
+    }
+  ]
+}
