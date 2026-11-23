@@ -1,0 +1,20 @@
+name: Marcar entregas Etapas 05 e 06
+on:
+  push:
+    paths:
+      - ".github/workflows/marcar-etapas.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  criar-tags:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Criar tags de cada etapa
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh api "repos/$GH_REPO/git/refs" -f ref="refs/tags/etapa-05" -f sha="c7cf8567f2987c2b4483e0bb0c9155c26ca4c672"
+          gh api "repos/$GH_REPO/git/refs" -f ref="refs/tags/etapa-06" -f sha="eb817a12ea46153367c3de7faad5936b1d519e53"
