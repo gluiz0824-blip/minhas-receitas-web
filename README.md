@@ -18,22 +18,6 @@ As cinco operações pedidas nesta etapa estão disponíveis:
 
 A API recebe e devolve JSON, valida as informações e utiliza códigos HTTP (200, 201, 400, 404, 405 e outros). A interface das etapas anteriores continua funcionando. **A atualização PUT é demonstrada pelo Postman**, sem acrescentar uma tela nova que não foi solicitada.
 
-## Como executar
-
-1. Instale o Node.js se ainda não tiver.
-2. Baixe este repositório e abra a pasta no VS Code.
-3. Abra o terminal na pasta do projeto e execute:
-
-~~~bash
-node servidor.js
-~~~
-
-4. Acesse **http://localhost:8000** para usar o site.
-5. Acesse **http://localhost:8000/api/receitas** para consultar a API.
-6. Para encerrar, use **Ctrl + C** no terminal.
-
-Não use apenas o Live Server e não abra os arquivos HTML diretamente: o Node.js precisa estar executando o servidor. O GitHub armazena o código, mas não hospeda essa API automaticamente.
-
 ## Como testar a Etapa 06
 
 A coleção do Postman contém exemplos dos cinco métodos e de erros:
