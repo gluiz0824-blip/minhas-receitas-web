@@ -1,0 +1,27 @@
+name: Testar e marcar Etapa 07
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/marcar-etapa-07.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  testar-e-marcar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 82781fc3490c75ea21031307a5ed30b5a3aca41b
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Testar CRUD e persistência
+        run: node --test testes/etapa-07.test.js
+      - name: Criar tag da entrega
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: gh api "repos/$GH_REPO/git/refs" -f ref="refs/tags/etapa-07" -f sha="82781fc3490c75ea21031307a5ed30b5a3aca41b"
